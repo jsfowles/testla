@@ -1,3 +1,5 @@
+import Button from '../Button';
+
 import {
   Main,
   Background,
@@ -39,6 +41,7 @@ const Hero = () => (
         <Top>620mi</Top>
         <Bottom>Mile Range</Bottom>
       </Info>
+      <Button />
     </Stats>
   </Main>
 );
