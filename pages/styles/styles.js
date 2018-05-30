@@ -1,4 +1,4 @@
-import styled, { keyframes, css, injectGlobal } from 'react-emotion';
+import styled, { injectGlobal } from 'react-emotion';
 
 export const injectGlobalStyles = () => injectGlobal`
 html, body {
@@ -7,17 +7,18 @@ html, body {
   color: white;
   height: 100%;
   background: black;
-  font-family: 'Gotham', Helvetica;
+  font-family: 'Gotham', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
 }
 
-#__next {
+li {
+  list-style-type: none;
   height: 100%;
 }
 
-img {
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+#__next {
+  height: 100%;
 }
 
 @font-face {
@@ -36,5 +37,14 @@ img {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 20px;
 }
 `;
