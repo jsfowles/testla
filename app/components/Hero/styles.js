@@ -80,21 +80,37 @@ export const Stats = styled.div({
   left: 0,
   top: '85%',
   width: '100%',
-  marginTop: 20
+  marginTop: 20,
+
+  '& > div': {
+    borderRight: '1px solid rgba(255,255,255,0.4)',
+
+    '&:nth-child(3)': {
+      borderRight: 'none'
+    }
+  }
 });
 
+export const Speedo = styled.svg({
+  width: 48,
+  height: 30,
+  marginTop: 5
+});
 export const Info = styled.div({
   width: 198,
   height: 52,
-  float: 'left',
-  borderRight: '1px solid rgba(255,255,255,0.4)'
+  float: 'left'
 });
 
 export const Top = styled.h4({
   margin: 0,
   textAlign: 'center',
   fontSize: 30,
-  fontWeight: 500
+  fontWeight: 500,
+
+  '& span': {
+    fontSize: '0.6em'
+  }
 });
 
 export const Bottom = styled.p({

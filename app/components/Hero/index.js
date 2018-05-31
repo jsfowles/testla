@@ -1,5 +1,5 @@
 import Button from '../Button';
-
+import speedo from '../../../static/images/speedo';
 import {
   Main,
   Background,
@@ -12,7 +12,8 @@ import {
   Stats,
   Top,
   Bottom,
-  Info
+  Info,
+  Speedo
 } from './styles';
 
 const Hero = () => (
@@ -30,15 +31,22 @@ const Hero = () => (
     </Copy>
     <Stats>
       <Info>
-        <Top>1.9s</Top>
-        <Bottom>0-60pmh</Bottom>
+        <Top>
+          <Speedo dangerouslySetInnerHTML={{ __html: speedo }} />
+          1.9<span>s</span>
+        </Top>
+        <Bottom>0-60mph</Bottom>
       </Info>
       <Info>
-        <Top>+250mph</Top>
+        <Top>
+          +250<span>mph</span>
+        </Top>
         <Bottom>Top Speed</Bottom>
       </Info>
       <Info>
-        <Top>620mi</Top>
+        <Top>
+          620<span>mi</span>
+        </Top>
         <Bottom>Mile Range</Bottom>
       </Info>
       <Button />

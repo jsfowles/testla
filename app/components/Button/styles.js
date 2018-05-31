@@ -7,7 +7,15 @@ export const Btn = styled.button({
   borderRadius: 21,
   background: 'transparent',
   color: '#fff',
+  fontFamily: 'Gotham',
   fontSize: 15,
   boxSizing: 'border-box',
-  border: '2.5px solid #fff'
+  textAlign: 'center',
+  border: '2.5px solid #fff',
+  cursor: 'pointer',
+  paddingTop: 5,
+  '&:hover': {
+    background: '#fff',
+    color: '#333'
+  }
 });
