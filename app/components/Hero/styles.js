@@ -60,7 +60,12 @@ export const P = styled.p({
   lineHeight: '24px',
   fontSize: 16,
   textAlign: 'center',
-  margin: '10px 0 0 0'
+  margin: '10px 0 0 0',
+
+  '@media(max-width: 700px)': {
+    fontSize: 13,
+    width: 310
+  }
 });
 
 export const Copy = styled.div({
@@ -70,7 +75,11 @@ export const Copy = styled.div({
   left: 0,
   top: '85%',
   width: '100%',
-  marginTop: -60
+  marginTop: -60,
+
+  '@media(max-width: 700px)': {
+    top: '68%'
+  }
 });
 
 export const Stats = styled.div({
@@ -84,7 +93,8 @@ export const Stats = styled.div({
   flexDirection: 'row',
 
   '@media(max-width: 700px)': {
-    flexDirection: 'column'
+    flexDirection: 'column',
+    top: '68%'
   }
 });
 
@@ -107,6 +117,10 @@ export const Top = styled.h4({
   fontSize: 30,
   fontWeight: 500,
 
+  '@media(max-width: 700px)': {
+    fontSize: 27
+  },
+
   '& span': {
     fontSize: '0.6em'
   }
@@ -115,7 +129,11 @@ export const Top = styled.h4({
 export const Bottom = styled.p({
   textAlign: 'center',
   fontSize: 13,
-  margin: 0
+  margin: 0,
+
+  '@media(max-width: 700px)': {
+    fontSize: 10
+  }
 });
 
 export const Data = styled.div({
@@ -125,11 +143,19 @@ export const Data = styled.div({
 
 export const ButtonContainer = styled.div({
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  alignItems: 'center'
 });
 
 export const DataContainer = styled.div({
   display: 'flex',
+  justifyContent: 'center',
+  marginBottom: 0,
+
+  '@media(max-width: 700px)': {
+    marginBottom: 40
+  },
+
   '& > div': {
     borderRight: '1px solid rgba(255,255,255,0.4)',
 

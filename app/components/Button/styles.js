@@ -14,6 +14,11 @@ export const Btn = styled.button({
   border: '2.5px solid #fff',
   cursor: 'pointer',
   paddingTop: 5,
+
+  '@media(max-width: 700px)': {
+    width: 330
+  },
+
   '&:hover': {
     background: '#fff',
     color: '#333'

@@ -28,6 +28,10 @@ export const Links = styled.div({
   fontWeight: 400,
   textTransform: 'uppercase',
 
+  '@media(max-width: 700px)': {
+    display: 'none'
+  },
+
   '& li': {
     margin: '0 10px'
   }
@@ -40,6 +44,10 @@ export const Others = styled.div({
   fontSize: 13,
   fontWeight: 400,
   textTransform: 'uppercase',
+
+  '@media(max-width: 700px)': {
+    display: 'none'
+  },
 
   '& li': {
     margin: '0 10px'
