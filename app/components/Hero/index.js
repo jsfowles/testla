@@ -13,7 +13,10 @@ import {
   Top,
   Bottom,
   Info,
-  Speedo
+  Speedo,
+  Data,
+  DataContainer,
+  ButtonContainer
 } from './styles';
 
 const Hero = () => (
@@ -30,26 +33,36 @@ const Hero = () => (
       </P>
     </Copy>
     <Stats>
-      <Info>
-        <Top>
+      <DataContainer>
+        <Info>
           <Speedo dangerouslySetInnerHTML={{ __html: speedo }} />
-          1.9<span>s</span>
-        </Top>
-        <Bottom>0-60mph</Bottom>
-      </Info>
-      <Info>
-        <Top>
-          +250<span>mph</span>
-        </Top>
-        <Bottom>Top Speed</Bottom>
-      </Info>
-      <Info>
-        <Top>
-          620<span>mi</span>
-        </Top>
-        <Bottom>Mile Range</Bottom>
-      </Info>
-      <Button />
+          <Data>
+            <Top>
+              1.9<span>s</span>
+            </Top>
+            <Bottom>0-60mph</Bottom>
+          </Data>
+        </Info>
+        <Info>
+          <Data>
+            <Top>
+              +250<span>mph</span>
+            </Top>
+            <Bottom>Top Speed</Bottom>
+          </Data>
+        </Info>
+        <Info>
+          <Data>
+            <Top>
+              620<span>mi</span>
+            </Top>
+            <Bottom>Mile Range</Bottom>
+          </Data>
+        </Info>
+      </DataContainer>
+      <ButtonContainer>
+        <Button />
+      </ButtonContainer>
     </Stats>
   </Main>
 );

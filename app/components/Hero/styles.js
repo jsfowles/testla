@@ -81,22 +81,21 @@ export const Stats = styled.div({
   top: '85%',
   width: '100%',
   marginTop: 20,
+  flexDirection: 'row',
 
-  '& > div': {
-    borderRight: '1px solid rgba(255,255,255,0.4)',
-
-    '&:nth-child(3)': {
-      borderRight: 'none'
-    }
+  '@media(max-width: 700px)': {
+    flexDirection: 'column'
   }
 });
 
 export const Speedo = styled.svg({
   width: 48,
-  height: 30,
-  marginTop: 5
+  height: 30
 });
+
 export const Info = styled.div({
+  display: 'flex',
+  justifyContent: 'center',
   width: 198,
   height: 52,
   float: 'left'
@@ -117,4 +116,25 @@ export const Bottom = styled.p({
   textAlign: 'center',
   fontSize: 13,
   margin: 0
+});
+
+export const Data = styled.div({
+  display: 'flex',
+  flexDirection: 'column'
+});
+
+export const ButtonContainer = styled.div({
+  display: 'flex',
+  flexDirection: 'column'
+});
+
+export const DataContainer = styled.div({
+  display: 'flex',
+  '& > div': {
+    borderRight: '1px solid rgba(255,255,255,0.4)',
+
+    '&:nth-child(3)': {
+      borderRight: 'none'
+    }
+  }
 });
